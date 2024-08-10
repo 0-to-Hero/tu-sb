@@ -1,4 +1,4 @@
-package br.com.zeroth.tusb.tusb;
+package br.com.zeroth.tusb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
