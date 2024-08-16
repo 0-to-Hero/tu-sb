@@ -2,9 +2,12 @@ package br.com.zeroth.tusb.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
+import lombok.experimental.Tolerate;
+import org.springframework.data.annotation.PersistenceConstructor;
 
 @Data
 @RequiredArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Entity
@@ -14,7 +17,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    final private String name;
-    final private String email;
+    @NonNull private String name;
+    @NonNull private String email;
 
 }
